@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		878E2BDE2C84D7FF002EC1FB /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 878E2BDD2C84D7FF002EC1FB /* Appwrite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		87D467DA2C84CF9F00840D9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878E2BDE2C84D7FF002EC1FB /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = album;
 			packageProductDependencies = (
+				878E2BDD2C84D7FF002EC1FB /* Appwrite */,
 			);
 			productName = album;
 			productReference = 87D467C72C84CF9D00840D9B /* album.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 87D467BE2C84CF9D00840D9B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				87E82D6E2C84D6DC0099A2FD /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 87D467C82C84CF9D00840D9B /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87E82D6E2C84D6DC0099A2FD /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		878E2BDD2C84D7FF002EC1FB /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E82D6E2C84D6DC0099A2FD /* XCRemoteSwiftPackageReference "sdk-for-apple" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87D467BF2C84CF9D00840D9B /* Project object */;
 }
