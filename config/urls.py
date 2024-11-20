@@ -24,6 +24,7 @@ urlpatterns = [
     # ...
     # Media files
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
+    path("", include("pwa.urls")),
 ]
 if settings.DEBUG:
     # Static file serving when using Gunicorn + Uvicorn for local web socket development

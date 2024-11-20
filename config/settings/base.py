@@ -70,6 +70,7 @@ DJANGO_APPS = [
     "django.contrib.admin",
     "django.forms",
 ]
+
 THIRD_PARTY_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",
@@ -77,12 +78,14 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.mfa",
     "allauth.socialaccount",
+    "pwa",
 ]
 
 LOCAL_APPS = [
     "album.users",
     # Your stuff: custom apps go here
 ]
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -280,3 +283,22 @@ SOCIALACCOUNT_FORMS = {"signup": "album.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# django-pwa
+# ------------------------------------------------------------------------------
+PWA_APP_NAME = "My Django PWA"
+PWA_APP_DESCRIPTION = "Description of my PWA"
+PWA_APP_THEME_COLOR = "#007bff"
+PWA_APP_BACKGROUND_COLOR = "#ffffff"
+PWA_APP_DISPLAY = "standalone"
+PWA_APP_SCOPE = "/"
+PWA_APP_START_URL = "/"
+PWA_APP_ICONS = [
+    {
+        "src": "/static/images/icons/icon-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png",
+    },
+    # Add more icons as needed
+]
+PWA_SERVICE_WORKER_PATH = "/serviceworker.js"
